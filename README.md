@@ -23,9 +23,4 @@ This project demonstrates how algorithms like **BFS, DFS, Dijkstra, and A\*** ex
 
 ---
 
-## 🚀 Getting Started
-
-### 1. Clone the repo
-```bash
-git clone https://github.com/YOUR_USERNAME/pathfinder-visualizer.git
-cd pathfinder-visualizer
+📸 Screenshots
