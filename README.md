@@ -24,3 +24,4 @@ This project demonstrates how algorithms like **BFS, DFS, Dijkstra, and A\*** ex
 ---
 
 📸 Screenshots
+<img width="1435" height="806" alt="Screen Shot 2025-08-26 at 5 33 54 PM" src="https://github.com/user-attachments/assets/40e53943-f3a6-4c63-9546-9d0fda8b5b8a" />
