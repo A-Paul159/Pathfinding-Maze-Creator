@@ -1,38 +1,98 @@
-.App {
-  text-align: center;
+body {
+  background-color: #c8f1f9;
+  margin: 0;
+  font-family: sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.maze-cell {
+  border: .25px solid #ccc;
+  box-sizing: border-box;
+  transition: background-color 0.2s ease;
+}
+.maze-cell.weight-1 {
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+}
+.maze-cell.weight-5 {
+  background-color: #098c2e;
+  border: 1px solid #098c2e;
+}
+.maze-cell.weight-10 {
+  background-color: #066b22;
+  border: 1px solid #066b22;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.bordered-maze {
+  border: 2px solid #000000;
+  border-radius: 4px;
+  background-color: #f8f9fa;
+  padding: 0px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.wall {
+  background-color: #000000;
+  border: 1px solid #171717;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.start {
+  background-color: #0044ff !important;
+  border: 1px solid #0044ff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.end {
+  background-color: #dc3545 !important;
+  border: 1px solid #dc3545;
 }
+
+.path-bfs {
+  background-color: #6f4202 !important;
+}
+
+.path-dfs {
+  background-color: #f4b908 !important;
+}
+
+.path-dijkstra {
+  background-color: #7d039b !important;
+}
+
+.path-astar {
+  background-color: #ee09db !important;
+}
+
+.stats-panel {
+  font-size: 1rem;
+  background-color: #c8f1f9;
+  padding: 4px 8px;
+  border-radius: 4px;
+  border: 0px solid #3c98e4;
+  color: #333;
+}
+
+.draggable-info {
+  position: absolute;
+  width: 300px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  cursor: move;
+  z-index: 9999;
+}
+
+.info-header {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 4px;
+  margin-bottom: 8px;
+}
+
+.btn-close {
+  font-size: 0.8rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+
